@@ -1,0 +1,47 @@
+.title {
+    font-weight: 600;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 20px;
+    margin: 45px 0;
+}
+
+.submitGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.altAuth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.panel {
+    position: relative;
+    width: 654px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.cover {
+    @apply flex-1 bg-main-bg-color-2 flex justify-center items-center relative;
+}
+
+.logo {
+    position: absolute;
+    top: 58px;
+    left: 57px;
+    height: 33px;
+}

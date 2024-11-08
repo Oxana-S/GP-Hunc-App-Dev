@@ -1,0 +1,58 @@
+.navItem {
+    --active-bg: #E2E8EC;
+
+    display: flex;
+    user-select: none;
+    align-items: center;
+    gap: 0 20px;
+    padding: 16px 20px;
+    color: #212121;
+    min-height: 56px;
+    transition: 0.2s ease all;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    position: relative;
+
+    &__subroutes {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            display: block;
+            height: 20px;
+            flex-shrink: 0;
+            content: "";
+        }
+    }
+
+    &__subroute {
+        position: relative;
+        padding-left: 64px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        margin: 0 -20px;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__active {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @apply bg-primary bg-opacity-5;
+        border-radius: 50px;
+        z-index: -1;
+    }
+}

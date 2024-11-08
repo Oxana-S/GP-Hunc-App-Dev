@@ -1,0 +1,36 @@
+.navbar {
+    position: relative;
+    width: 362px;
+    height: calc(100vh - 95px);
+    background: #fff;
+    padding-top: 10px;
+    position: sticky;
+    top: 95px;
+    flex-shrink: 0;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__content {
+        position: relative;
+        flex: 1;
+        padding: 10px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 95px;
+        left: 362px;
+        width: calc(100vw - 362px);
+        height: calc(100vh - 95px);
+        overflow: hidden;
+        pointer-events: none;
+    }
+}
