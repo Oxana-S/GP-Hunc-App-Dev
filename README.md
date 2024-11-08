@@ -15,7 +15,7 @@ git push -u origin main
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
- # Описание Проекта
+## Описание Проекта
 
 # Getting Started
 
